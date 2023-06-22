@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    /* 함수 정의 */
+    /* 함수로 정의한 코드는 함수 호출해야만 실행됩니다 */
+    function check() {
+            //alert("클릭되었습니다");
+        // 사용자id 입력했는지 확인
+        //
+        let useridTag= document.getElementById("userid");
+        //alert(useridTag);
+        let userid = useridTag.value; //가지고 있는 것 중 value값 가지고 오기
+        alert(userid );
+
+
+        useridTag.value="이윤정";
+
+
+        //판단
+        if( userid == ""){
+            alert(" 아이디를 입력하세요");
+        }
+    }
+
+</script>
+
+<body>
+    
+    아이디
+    <input type="text" id="userid" value="atarcis">
+                <!-- check() 함수 호출, call -->
+    <button onclick="check()"> 클릭</button>
+
+
+    <img src="고양이.jpg">
+
+
+
+</body>
+</html>
