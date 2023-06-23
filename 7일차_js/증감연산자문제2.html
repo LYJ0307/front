@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let a=10, b=10;
+        let result1, result2;
+
+        --a; // 10이었는데 먼저 감소시켜서 9
+        a--; // 9에서 1감소 시켜서 8이 된다
+        result1 = a-- + b++; //8에서 감소시켜서 7, + b에서 증가시켜서 11 // 18
+        result2 = ++a + --b; // 1 증가시켜서 8이 되고, 11에서 1 감소시킨 값을 저장해서 10 // 18
+
+
+        console.log(a);
+        console.log( result1);
+        console.log( result2);
+
+    </script>
+
+</body>
+</html>
