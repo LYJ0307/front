@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let computer = Math.floor(Math.random()*3); //Math.floor() : 소수점 이하를 버림, Math.random()*3은 최대값을 3 범위 내에서 설정함
+        let user = prompt("숫자를 입력하세요: 가위: 0, 바위: 1, 보: 2", "1");
+        let result = 0;
+
+        
+
+        if(user==0){
+            if(computer==0){
+                prompt("무승부입니다. 숫자를 다시 입력하세요:  가위: 0, 바위: 1, 보: 2")
+            }
+            else if(computer==1){
+                document.write("<h1>패배했습니다</h1>")
+            }
+            else{
+                document.write("<h1>승리했습니다</h1>");
+            }1
+
+
+
+
+        }
+
+        if(user==1){
+            if(computer==1){
+                prompt("무승부입니다. 숫자를 다시 입력하세요:  가위: 0, 바위: 1, 보: 2")
+            }
+            else if(computer==2){
+                document.write("<h1>패배했습니다</h1>")
+            }
+            else {
+                document.write("<h1>승리했습니다</h1>")
+            }
+        }
+
+
+        if(user==2){
+            if(computer==2){
+                prompt("무승부입니다. 숫자를 다시 입력하세요:  가위: 0, 바위: 1, 보: 2")
+            }
+            else if(computer==1){
+                document.write("<h1>승리했습니다</h1>")
+            }
+            else {
+                document.write("<h1>패배했습니다</h1>")
+            }
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
