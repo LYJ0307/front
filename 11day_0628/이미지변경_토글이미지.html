@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="girl.png" onclick="changImg1()"  id="pimg"></img>
+
+    <button onclick="changImg1()"> 보이기</button>
+    <button onclick="changImg2()"> 안보이기</button>
+    
+
+    <script>
+        
+
+        // 전역변수         //flag라는 변수 사용하겠다 => 보이기/감추기 정보를 저장할 변수
+                           //true: 보이기 , false : 안보이기 결정
+                           //스위치 변수, flag변수
+        function changImg1() {
+            // alert("dkfkfk");
+            let pimg = document.getElementById("pimg");
+            // alert(pimg);
+            pimg.src="boy.png";
+        }
+
+        function changeImg2(){
+            // alert("dkfkfkfk");
+            let pimg = document.getElementById("pimg");
+            // alert(pimg);
+            pimg.src="girl.png";
+        }
+
+
+    
+    </script>
+
+</body>
+</html>
