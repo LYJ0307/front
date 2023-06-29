@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <img src="https://static.hubzum.zumst.com/hubzum/2022/02/08/16/3397c015aed547d9bd373a9a51fe157a.png" 
+    onclick="show()" id="ramen12" alt="">
+
+
+    <div class="inform" id="inform">
+
+       </br><h2>물을 500ml 냄비에 넣는다</h2></br>
+       </br><h2>물이 끓으면 스프랑 건더기를 먼저 넣습니다</h2></br>
+       </br><h2>스프가 풀어지면 면을 넣습니다</h2></br>
+       </br><h2>면을 넣고 3분 뒤 불을 끕니다</h2></br>
+       </br><h2>맛있는 라면 완성</h2></br>
+
+
+    </div>
+
+
+    <script>
+
+        let flag = true;
+
+
+        function show() {
+
+            let sinform = document.getElementById("inform");
+            if (flag==true) {
+                sinform.style.display = "block";
+                flag=false;
+            }else{
+                sinform.style.display="none";
+                flag=true;
+            }
+
+        }
+
+
+
+    </script>
+
+
+    
+    
+</body>
+</html>

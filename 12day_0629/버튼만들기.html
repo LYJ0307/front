@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .btn{
+        width: 150px;
+        height: 80px;
+        background-color: yellowgreen;
+    }
+
+</style>
+
+<body>
+    
+    <div id="mybutton"></div>
+
+    <button onclick="add()">스타일추가</button>
+    <button onclick="remove()">스타일제거</button>
+
+    
+    <script>
+
+        function add() {
+            let btn = document.getElementById("mybutton");
+            btn.classList.add("btn");
+        }
+
+        function remove() {
+            let btn = document.getElementById("mybutton");
+            btn.classList.remove("btn")
+        }
+
+    </script>
+
+
+</body>
+</html>
