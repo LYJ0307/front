@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+    .color{
+        width: 150px;
+        height: 150px;
+        background-color: lightpink;
+    }
+
+</style>
+
+<body>
+
+        <div id="btn1"></div>
+
+    <script>
+        
+        function coloradd() {
+            let color = document.getElementById("btn1");
+            color.classList.add("color");
+        }
+
+        function colorremove() {
+            let color1 = document.getElementById("btn1");
+            color1.classLista.remove("color1")
+        }
+
+
+        /*function coloradd() {
+            let btn = document.getElementById("btn1");
+            btn.classList.add("btn");
+        } 안 되는 코드 */
+
+    </script>
+    
+    <button onclick="coloradd()" id="btn1">색상 추가</button>
+    <button onclick="colorremove()" id="btn1">색상 제거</button>
+</body>
+</html>

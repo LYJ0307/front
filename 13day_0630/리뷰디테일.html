@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .wrap{
+        width: 700px;
+        height: 800px;
+        border: 1px solid black;
+
+        margin: 0 auto;
+    }
+
+    .title{
+        width: 700px;
+        height: 80px;
+        border: 1px solid black;
+
+        text-align: center;
+    }
+
+    .wrap_img_info{
+        width: 700px;
+        height: 250px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .wrap_mini_box{
+        width: 300px;
+        height: 220px;
+        border: 1px solid black;
+    }
+
+    .customer_inform{
+        width: 700px;
+        height: 160px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .wrap_customer_box{
+        width: 33%;
+        height: 90px;
+        border: 1px solid black;
+        margin-top: 30px;
+    }
+
+    .review_inform1{
+        width: 700px;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    h4{
+        margin-top: 20px;
+    }
+
+    #input_s{
+        width: 223px;
+    }
+    #input_a{
+        width: 650px;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+    }
+
+    
+
+</style>
+
+<body>
+    
+    <div class="wrap">
+        <div class="title">
+            <h3>REVIEW DETAILS</h3>
+        </div>
+        <div class="wrap_img_info">
+            <div class="wrap_mini_box">
+                <h4>이미지</h4>
+                <img src="https://www.isaac-toast.co.kr/upload/product/3695976324_MejtkAFH_20221020111158.png" alt="">
+            </div>
+            <div class="wrap_mini_box">
+                <h4>맛평가(후기)</h4>
+                <textarea name="" id="" cols="40" rows="8"></textarea>
+            </div>
+        </div>
+        <div class="customer_inform">
+
+            <div class="wrap_customer_box">
+                <h4><label for="">연령대</label></h4>
+                <input type="text" id="input_s">
+            </div>
+
+            <div class="wrap_customer_box">
+                <h4>만족도</h4>
+                <input type="text" id="input_s">
+            </div>
+
+            <div class="wrap_customer_box">
+                <h4>성별</h4>
+                <input type="text" id="input_s">
+            </div>
+        </div>
+        <div class="review_inform1">
+            <h4><label for="">판매점 정보 (구매 사이트)</label></h4>
+            <input type="text" id="input_a">
+        </div>
+        <div class="review_inform1">
+            <h4><label for="">더 나누고 싶은 정보</label></h4>
+            <textarea name="" id="" cols="100" rows="3"></textarea>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function hello(f) {
+
+            alert("3초 후에 설명해 줄게");
+            f();
+        }
+
+        function message1() {
+            alert("안녕");
+        }
+
+        function message2() {
+            alert("오늘 날씨는 흐림");
+        }
+
+
+        hello(message1);
+        hello(message2);
+
+
+        setTimeout(function() {
+            alert("종료 직전 알림");
+        }, 3000);
+
+        
+        setTimeout( ()=> alert("종료되었습니다"), 3000);
+
+
+    </script>
+    
+</body>
+</html>
