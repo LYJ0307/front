@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        let array = ["월요일", "화요일", "수요일", "목요일", "금요일"];
+
+
+        alert( array[0]);
+        alert( array[1]);
+        alert( array[2]);
+        alert( array[3]);
+        alert( array[4]);
+
+
+        for(let i=0; i<array.length; i++) {
+            alert(array[i] + " " + i);
+        }
+
+
+        array.forEach( function( item, i){
+            alert(item + " " + i);
+        });
+
+        
+        array.forEach(func1);
+
+
+        function func1(a, b) {      // 매개변수가 2개인 함수    요소, index
+            alert(a + " " + b);
+        }
+
+
+    </script>
+
+
+</body>
+</html>
