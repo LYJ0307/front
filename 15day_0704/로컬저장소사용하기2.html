@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let str = ["트윅스", "청포도", "버터카라멜", "마이쮸", "하리보"];
+
+        let result = JSON.stringify(str);
+        
+        localStorage.setItem("str", result);
+
+
+        let searchs = localStorage.getItem("str");
+        alert("저장소로부터 데이터 꺼내기 =" + searchs);
+        
+        let search = JSON.parse(searchs); // 문자를 배열로 바꿔줌
+
+
+        console.log(search);
+
+    </script>
+    
+</body>
+</html>

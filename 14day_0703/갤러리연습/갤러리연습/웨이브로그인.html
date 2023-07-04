@@ -85,6 +85,7 @@
     }
 
     ul{
+        background-color: #252525;
         list-style-type: none;
         margin: 0px;
         padding: 0px;
@@ -92,7 +93,8 @@
 
     li{
         background-color: #252525;
-        float: left;
+        display: inline-block;
+        text-align: center;
         margin-left: 8px;
     }
 
@@ -117,13 +119,13 @@
     a{
         color: white;
         text-decoration: none;
-        background-color: #252525;
+        background-color: #1b1b1b;
+        
     }
 
     .join_find{
-        display: inline-block;
         width: 430px;
-        height: 20px;
+        height: 30px;
         margin: 20px auto 50px;
         background-color: #252525;
         border: 1px solid skyblue;
@@ -135,11 +137,78 @@
         background-color: #252525;
         border: 1px solid blueviolet;
         color: white;
+        text-align: center;
+        justify-content: center;
     }
 
     span{
         width: 50px;
         background-color: white;
+    }
+
+    h2{
+        background-color: #252525;
+    }
+
+    .login_sns{
+        background-color: #252525;
+        width: 364px;
+        height: 65px;
+        margin: 20px auto 40px;
+        border: 1px solid yellow;
+    }
+
+
+    .login_each_kakao{
+        background-color: #ffec00;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin-left: 5px;
+    }
+
+    .login_t_id{
+        background-color: rgb(54, 23, 206);
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin-left: 5px;
+    }
+
+    .login_naver_id{
+        background-color: rgb(35, 185, 9);
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin-left: 5px;
+    }
+
+    .login_fb_id{
+        background-color: rgb(59, 89, 152);
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin-left: 5px;
+    }
+
+    .login_apple_id{
+        background-color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin-left: 5px;
+    }
+
+    .icon_sns{
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+
+    .icon_kakao{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACTklEQVRYCe1WTUsbURR9d2bQKC6SUihESEjc9C+kVRsoBfciIrgSP3Br+zdcFIQuWlxU6EZpt1ahjIkfuFAQSZBAHBMxWhpECqVQTF7PC1rwvTeZMR0olDyYDPfOOeeeufM+wlh7tDvwjztAfuun02nr+vh4iBGlQXrCGetlnD9s8ImqyJ0ht42cbSWTq7ZtX/vR9jQwkkp1fa1UXtY5n4Vg1I8oMBWD6M2jaHR+eWfnZzNOUwODicRgvVZbhEBfM5Emz4qGaU5kHCfjhnE1MBCPD6OlH9DSDjeyrzzRL4OxsUyp9FGH1xoYiMWeArwBA6aOdN8citTAeZYtl7dkLszdHeKbY6ItBVVcqAstXO8b2nfLMcXAxfn5KOc8IeGCCJNCWxZSDOCbj8ugwGKNtmIAb/84sIKSkE5bMYAJE5Z4QYYPZDHFACZgQQYFFRPRqaylGuD8QAYFGO/KWooBLJcFGRRUbBjGW1lLMbBZLu+hVSsy8K9jok8bjpOVdRQDAtDd0zODyXgog1uN8UKO1dk5reNrDXzO5S47TPMFCDkd6T45FM+HQqF+u1Co6niue71zdfUjGYksYu2a6EYKZK1ZnehNrg7e665weGw9n790wwHjPXAyzsPInDcSCKLv+F2yiBbsk5MjL47lBbh5Lk7HPwNt/YLgANu22Fg4ilZxneHaNuPxfb//hoSgZwf6Y7EIQN8apyPejjh/hWNVWU5CrJXh2QEUfy6K475GljWZKRaV3ayVwrccTwMARtDyqWyp9O6W1L63O/BfdeA3G6OjNkWwE8gAAAAASUVORK5CYII=);
     }
 
 
@@ -180,13 +249,13 @@
 
                 <ul class="join_find">
                     <li class="">
-                        <a href="">아이디 찾기</a>
+                        <a href="">아이디 찾기   |</a>
                     </li>
                     <li class="">
-                        <a href="">비밀번호 재설정</a>
+                        <a href="">  비밀번호 재설정   |</a>
                     </li>
                     <li class="">
-                        <a href="">회원가입</a>
+                        <a href="">    회원가입</a>
                     </li>
                 </ul>
 
@@ -194,7 +263,32 @@
 
 
                 <div class="sns_box">
-                    <span></span>
+                    <h2>또는 다른 서비스 계정으로 로그인</h2>
+                    <div class="login_sns">
+                            <ul>
+                                <li class="login_each_kakao">
+                                    <a href="">
+                                    <img class="icon_sns" src="" alt="">
+                                    </a>
+                                </li>
+                                <li class="login_t_id">
+                                    <a href="">
+
+                                    </a>
+                                </li>
+                                <li class="login_naver_id">
+                                    <a href="">
+                                        
+                                    </a>
+                                </li>
+                                <li class="login_fb_id">
+                                    <a href=""></a>
+                                </li>
+                                <li class="login_apple_id">
+                                    <a href=""></a>
+                                </li>
+                            </ul>
+                    </div>
                 </div>
 
 

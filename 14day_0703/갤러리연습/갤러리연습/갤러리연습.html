@@ -20,6 +20,17 @@
         width: 500px;
         height: 500px;
         border: 1px solid black;
+
+
+        background-image: url("kitty.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .btn{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
     }
 
     .preBtn{
@@ -44,42 +55,43 @@
 
 <script>
 
-    let img = ["kitty.png", "kuromi.png", "sinamorol.png", "mymelody.png"];
+    let img = ["kuromi.png", "sinamorol.png", "mymelody.png"];
     let i = 0;
 
     function next() {
 
-        i++;
-        if ( i >= img.length) {
-            i=0;
-        }
+            i++;
+            if( i >= img.length){
+                i=0;
+            }
 
-        let gallery = document.querySelector(".gallery"); {
+            let gallery = document.querySelector(".gallery");
             gallery.innerHTML="";
-
-            gallery.style.backgroundImage="url(' "+ img[i] + " ')";
-            gallery.style.backgroundSize= "cover";
+            gallery.style.backgroundImage=" url(' " + img[i] + " ')";
+            gallery.style.backgroundSize = "cover";
             gallery.style.backgroundPosition = "center";
-        }
-    }
 
-
-    function prev() {
-
-        i--;
-        if ( i <= img.length) {
-            i=0;
         }
 
-        let gallery = document.querySelector(".gallery"); {
-            gallery.innerHTML="";
+
+        function prev() {
 
 
-            gallery.style.backgroundImage="url(' "+ img[i] +"')";
-            gallery.style.backgroundSize="cover";
-            gallery.style.backgroundPosition="center";
+                let gallery = document.querySelector(".gallery");
+                gallery.innerHTML="";
+                i--;
+                if(i < 0) {
+                    i = img.length-1;  // 배열의 가장 큰 index
+                }
+                gallery.style.backgroundImage="url(' " + img[i] +"')"
+                gallery.style.backgroundSize="cover";
+                gallery.style.backgroundPosition="center";
+
+
+
+
         }
-    }
+
 
 
 </script>
@@ -88,11 +100,10 @@
 <body>
     
     <div class="gallery-wrap">
-        <div class="gallery">갤러리연습
-            <div class="preBtn" onclick="prev()"> << </div>
-            <div class="nextBtn" onclick="next()"> >> </div>
-        </div>
-    </div>
+        <div class="gallery"></div>
 
+        <div class="preBtn  btn" onclick="prev()"> << </div>
+        <div class="nextBtn  btn" onclick="next()"> >> </div>
+    </div>
 </body>
 </html>

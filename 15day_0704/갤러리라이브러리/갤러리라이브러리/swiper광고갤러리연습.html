@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<style>
+
+    .swiper {
+    width: 800px;
+    }
+
+</style>
+
+
+<script>
+
+window.addEventListener("load", function(){
+          
+          new Swiper(  '.swiper' ,  {            
+              slidesPerView: 3 ,
+              spaceBetween :10 ,
+              centeredSlides:true,
+              loop:true,
+              autoplay: {
+                  delay: 3000
+              },
+              pagination: {
+                  el: '.promotion .swiper-pagination' ,
+                  clickable: true
+              },
+            // Navigation arrows
+              navigation: {
+                  nextEl: '.promotion .swiper-button-next',
+                  prevEl: '.promotion .swiper-button-prev',
+              } 
+                                  
+
+              });
+
+
+
+  });
+
+    
+</script>
+
+
+<body>
+    
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="110.png" alt=""></div>
+          <div class="swiper-slide"><img src="111.png" alt=""></div>
+          <div class="swiper-slide"><img src="113.png" alt=""></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+
+
+</body>
+</html>
