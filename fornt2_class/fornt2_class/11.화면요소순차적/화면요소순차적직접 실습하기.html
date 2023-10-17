@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+<script >
+
+
+//windw.addEventListener("load", function(){   });
+
+ window.addEventListener("load", function(){
+
+     
+    //  //fade_ins[0].style.opacity=1;
+     
+    //  setTimeout( function(){
+    //      fade_ins[0].style.opacity=1;
+    //     }, 1000);
+        
+        
+    //     setTimeout( function(){
+    //         fade_ins[1].style.opacity=1;
+    //     }, 2000);
+
+        
+    //     setTimeout( function(){
+    //         fade_ins[2].style.opacity=1;
+    //     }, 3000);
+
+
+   let fade_ins  = document.querySelectorAll(".fade_in");
+
+
+fade_ins.forEach(  (  fade_in  ,  index) => {  
+     alert("hi");
+    // setTimeout(  function(){   fade_in.style.opacity =1 ;}  ,  (index+1) * 700);
+});   
+});
+
+    
+
+</script>
+
+<style>
+
+    .fade_in {
+        opacity: 0;
+        transition: 1s;
+    }
+    
+   </style>
+</head>
+<body>
+    
+
+   <div class="visual">
+
+    <div class="fade_in"  >
+        <img src="../images/badage1.jpg">
+    </div> 
+
+    <div class="fade_in">
+        <img src="../images/badage1.jpg">
+    </div> 
+    <div class="fade_in">
+        <img src="../images/badage1.jpg">
+    </div> 
+   
+   
+   </div>
+</body>
+</html>
